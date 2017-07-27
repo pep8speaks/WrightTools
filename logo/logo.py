@@ -67,7 +67,7 @@ xi, yi, zi = wt.kit.zoom2D(xi, yi, zi)
 levels = np.linspace(cutoff, np.nanmax(zi), 10)
 ax.contour(xi, yi, zi, levels=levels, colors='k', lw=5, alpha=0.5, vmin = np.nanmin(zi), vmax = np.nanmax(zi))
 levels = np.linspace(np.nanmin(zi), cutoff, 6)
-ax.contour(xi, yi, zi, levels=levels, colors='k', lw=5, alpha=0.5, vmin = np.nanmin(zi), vmax = np.nanmax(zi))
+#ax.contour(xi, yi, zi, levels=levels, colors='k', lw=5, alpha=0.5, vmin = np.nanmin(zi), vmax = np.nanmax(zi))
 ax.contour(xi, yi, zi, levels=[cutoff], colors='k', linewidths=5, alpha=1, vmin = np.nanmin(zi), vmax = np.nanmax(zi))
 
 # decorate
